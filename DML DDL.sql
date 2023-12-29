@@ -14,6 +14,7 @@ create table teste (
 alter table teste add teste2 varchar(255);
 alter table teste drop column teste;
 alter table teste modify column teste2 int(255);
+alter table define add constraint checknull check (teste2 is null); -- check, primary key, not null, etc...
 
 truncate table teste;
 rename table teste to define;
